@@ -1,0 +1,22 @@
+<?php
+/*
+Facebook-page url, or fbid . e.g. "Toyota" or "197052454200"
+*/
+define('FB_PAGE', "xxxx");
+
+/* Send or don't send email */
+define('SEND_EMAIL', 1);
+define('TO_EMAIL_ADDRESS', 'xxxx@xxxx.com');
+define('FROM_EMAIL_ADDRESS', "noreply@example.com");
+
+/*
+Some carriers allow you to send a text by sending an email, e.g. email to txt.att.net 
+*/
+define('SEND_TEXT', 1);
+define('CARRIER_TEXT_EMAIL', 'xxxxx@txt.att.net');
+
+/*
+FB Params
+*/
+define('FB_APP_ID', 'xxxx');
+define('FB_APP_SECRET', 'xxxx');
