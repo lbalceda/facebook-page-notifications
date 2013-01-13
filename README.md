@@ -8,5 +8,5 @@ Requires
 --------
 
 - Pear::Mail  ( pear install mail ) 
-- FB php sdk ( )
+- FB php sdk ( https://github.com/facebook/facebook-php-sdk )
 - your own App ID / Secret for oauth graph requests.
