@@ -17,6 +17,7 @@ class PageChecker
       
       $data = $this->getFeedInfo();
       $this->lastPostId = $this->getPostId($data[0]);
+      //echo 'Init lastPostId to '.$this->lastPostId;
     }
   
     function exec(){
@@ -30,12 +31,12 @@ class PageChecker
       if ($this->shouldNotify($this->getFeedInfo())){
         if (SEND_EMAIL)
         {
-          echo "sending email \r\n";
+          //echo "sending email \r\n";
           $this->sendEmail(TO_EMAIL_ADDRESS);
         }
         if (SEND_TEXT)
         {
-          echo "sending text \r\n";
+          //echo "sending text \r\n";
           $this->sendText();
         }
       }
@@ -55,7 +56,7 @@ class PageChecker
         {
           $this->lastPostId = $id;
           $this->message = $message;
-          echo "updated last postId to $id\r\n";
+          //echo "updated last postId to $id\r\n";
           return true;        
         }
       }
