@@ -16,8 +16,7 @@ class PageChecker
       $this->facebook = new Facebook(array('appId'=> FB_APP_ID, 'secret' => FB_APP_SECRET));
       
       $data = $this->getFeedInfo();
-      //$this->lastPostId = $this->getPostId($data[0]);
-      echo 'Init lastPostId to '.$this->lastPostId;
+      $this->lastPostId = $this->getPostId($data[0]);
     }
   
     function exec(){
